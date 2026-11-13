@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Cursor subagent",
+    "description": "Delegate one task to the installed Cursor CLI with --force; delete the native session after completion."
+  }
+}

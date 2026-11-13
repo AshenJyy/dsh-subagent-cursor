@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Cursor 子智能体",
+    "description": "使用本机 Cursor CLI 和 --force 委派单个任务，任务结束后删除原生 session。"
+  }
+}

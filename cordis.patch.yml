@@ -1,0 +1,9 @@
+- insert:
+    - id: subagent-cursor
+      name: dsh-subagent-cursor
+    - id: tool-subagent-cursor
+      name: '@deepseek-ai/dsh-tool-subagent'
+      config:
+        provider: cursor
+        toolName: subagent_cursor
+        maxDepth: provider-managed

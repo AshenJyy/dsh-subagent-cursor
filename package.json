@@ -1,0 +1,39 @@
+{
+  "name": "dsh-subagent-cursor",
+  "version": "0.2.2-rc.3",
+  "description": "One-shot Cursor CLI subagent for DeepSeek Harness 0.2.2-rc.3, using ACP, --force and automatic native session deletion",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/AshenJyy/dsh-subagent-cursor.git" },
+  "homepage": "https://github.com/AshenJyy/dsh-subagent-cursor#readme",
+  "bugs": { "url": "https://github.com/AshenJyy/dsh-subagent-cursor/issues" },
+  "keywords": ["dsh", "deepseek-harness", "cursor", "subagent", "acp"],
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/types/index.d.ts",
+  "exports": {
+    ".": { "types": "./lib/types/index.d.ts", "default": "./lib/index.js" },
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./src/*": "./src/*"
+  },
+  "files": ["lib", "src", "types", "scripts", "locale", "icon.svg", "cordis.patch.yml", "README.md", "NOTICE", "LICENSE"],
+  "engines": { "node": ">=24.0.0" },
+  "scripts": { "build": "node scripts/build.mjs" },
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } },
+  "icon": "./icon.svg",
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.1.0",
+    "@deepseek-ai/dsh-llm": "0.2.2-rc.3",
+    "@deepseek-ai/dsh-session": "0.2.2-rc.3",
+    "@deepseek-ai/dsh-subagent": "0.2.2-rc.3",
+    "@deepseek-ai/dsh-subprocess": "0.2.2-rc.3",
+    "@deepseek-ai/dsh-timeout": "0.2.2-rc.3"
+  },
+  "dependencies": {
+    "@deepseek-ai/dsh-brand": "0.2.2-rc.3",
+    "@deepseek-ai/dsh-sdk-protocol": "0.2.2-rc.3",
+    "@deepseek-ai/dsh-tool-subagent": "0.2.2-rc.3",
+    "@deepseek-ai/schemastery": "~3.19.0"
+  }
+}

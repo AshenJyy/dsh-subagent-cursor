@@ -1,0 +1,12 @@
+dsh-subagent-cursor is an independent third-party plugin.
+
+Its provider and managed run lifecycle are adapted from:
+  DeepSeek Harness, packages/subagent/subagent-codex
+  Tag: dsh-v0.2.2-rc.3
+  Commit: 38a6a5c965aa99ab525161efb7cc5cf1fe62fced
+  https://github.com/deepseek-ai/deepseek-harness
+  Copyright (c) 2026 DeepSeek. MIT license; see LICENSE.
+
+The Cursor ACP adapter, installed-CLI resolver and session cleanup are new code.
+Cursor CLI is not bundled or redistributed. It remains a separately installed product.
+Neither DeepSeek nor Cursor has endorsed this plugin.
